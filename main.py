@@ -4,7 +4,7 @@ class Profile:
         self.data = []
         self.data_string = ''
         self.file_name = str(self.name)
-        self.f = open(self.file_name + '.txt', 'w+')
+        self.f = open(self.file_name + '.txt', 'w+', encoding='utf-8')
         self.f.writelines(self.name + '\n')
 
     def write_data(self, arr):  # записать данные
@@ -21,12 +21,6 @@ class Profile:
     def print_info(self):  # просмотреть информацию
         print(self.name, self.data)
 
-
-a = Profile('Nikita')
-a.write_data([1, 2, 3])
-
-b = Profile('Max')
-b.write_data([4, 5, 6])
 
 
 
