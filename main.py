@@ -21,6 +21,4 @@ class Profile:
     def print_info(self):  # просмотреть информацию
         print(self.name, self.data)
 
-    def show_name(self):
-        print(self.name)
 
