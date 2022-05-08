@@ -12,7 +12,7 @@ class Profile:
         self.data_string = ''
         
         for i in self.data:
-            self.data_string += str(i)
+            self.data_string += str(i) + ' '
         self.f.writelines(self.data_string + '\n')
         
     def delete_data(self, deleted_item):  # удалить данные
@@ -20,10 +20,3 @@ class Profile:
 
     def print_info(self):  # просмотреть информацию
         print(self.name, self.data)
-
-
-
-
-
-
-
