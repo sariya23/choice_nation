@@ -13,13 +13,14 @@ class Profile:
         
         for i in self.data:
             self.data_string += str(i)
-        self.f.writelines(self.data_string)
+        self.f.writelines(self.data_string + '\n')
         
     def delete_data(self, deleted_item):  # удалить данные
         del self.data[self.data.index(deleted_item)]
 
     def print_info(self):  # просмотреть информацию
         print(self.name, self.data)
+
 
 
 
